@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Atlético River Plate</title>
+    <style>
+        /* Configuración general y fondo del Monumental */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Estadio_Monumental_-_2023.jpg/1280px-Estadio_Monumental_-_2023.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 30px 15px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Contenedor principal con efecto cristal oscuro y escudo de fondo */
+        .contenedor-principal {
+            max-width: 900px;
+            margin: 0 auto;
+            background-image: linear-gradient(rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.90)), url('escudo de river plate.png');
+            background-size: cover;
+            background-position: center;
+            padding: 50px 40px;
+            border-radius: 15px;
+            border-top: 6px solid #d32f2f;
+            border-bottom: 6px solid #d32f2f;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Encabezados */
+        h1 {
+            color: #ffffff;
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+            border-bottom: 3px solid #d32f2f;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #ff5252;
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+        }
+
+        /* Secciones internas (reemplaza el uso excesivo de <br>) */
+        .seccion {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #d32f2f;
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .seccion:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Párrafos justificados y legibles */
+        p {
+            color: #f1f1f1;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            font-size: 17px;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* Botón Oficial con animación */
+        .btn-oficial {
+            display: inline-block;
+            padding: 14px 28px;
+            background-color: #d32f2f;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            border: 2px solid #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(211, 47, 47, 0.4);
+        }
+
+        .btn-oficial:hover {
+            background-color: #ffffff;
+            color: #d32f2f;
+            border-color: #d32f2f;
+            transform: translateY(-3px);
+        }
+
+        /* Imágenes responsivas */
+        .img-historia {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
+            margin-top: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .img-historia:hover {
+            transform: scale(1.02);
+        }
+
+        /* Contenedor responsivo para el video de YouTube */
+        .video-contenedor {
+            position: relative;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
+            margin-top: 15px;
+        }
+
+        .video-contenedor iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Adaptación para celulares */
+        @media (max-width: 600px) {
+            .contenedor-principal {
+                padding: 25px 15px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .seccion {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        
+        <h1>Club Atlético River Plate</h1>
+
+        <p>El <strong>Club Atlético River Plate</strong> es una de las instituciones deportivas más importantes y prestigiosas de Argentina y del mundo. Fue fundado el 25 de mayo de 1901.</p>
+        <p>Con su mítica banda roja cruzando el pecho, el equipo ha marcado la historia del fútbol. Para conocer las últimas noticias, visita el sitio web oficial.</p>
+        
+        <a href="https://www.cariverplate.com.ar/" target="_blank" rel="noopener noreferrer" title="Ir al sitio oficial de River Plate" class="btn-oficial">
+            Visitar Sitio Oficial
+        </a>
+
+        <!-- Sección 1 -->
+        <div class="seccion">
+            <h2>Épocas Doradas: La Máquina</h2>
+            <p>En la década de 1940, River formó una delantera legendaria conocida como <strong>"La Máquina"</strong>, integrada por Muñoz, Moreno, Pedernera, Labruna y Loustau. Este equipo es considerado uno de los mejores de la historia del fútbol mundial por su estilo de juego ofensivo y vistoso.</p>
+            <img src="la delanteroa la maquina dorada.jpg" alt="Delantera de La Máquina de River Plate" width="500" title="La mítica Máquina" class="img-historia">
+        </div>
+
+        <!-- Sección 2 -->
+        <div class="seccion">
+            <h2>Gloria Internacional y Tricampeonatos</h2>
+            <p>A lo largo de su rica historia, River Plate ha conseguido múltiples títulos nacionales, destacándose por lograr <strong>cuatro tricampeonatos</strong> en el ámbito local. En el plano internacional, ha conquistado cuatro Copas Libertadores y una Copa Intercontinental, consolidándose como una potencia mundial.</p>
+            <img src="plantel de river 1986.jpg" alt="Plantel de River Plate Campeón en 1986" width="500" title="Campeones de 1986" class="img-historia">
+        </div>
+
+        <!-- Sección 3 -->
+        <div class="seccion">
+            <h2>El Estadio Más Monumental</h2>
+            <p>Con las recientes remodelaciones, el <strong>Monumental</strong> se consolidó como el estadio con mayor capacidad de toda Sudamérica.</p>
+            <img src="monumental.jpg" alt="Vista exterior del renovado Estadio Monumental" width="350" title="El Estadio Más Grande de Sudamérica" class="img-historia">
+        </div>
+
+        <!-- Sección 4 -->
+        <div class="seccion">
+            <h2>El Escudo y Los Colores</h2>
+            <img src="escudo de river plate.png" alt="Escudo oficial de River Plate" width="200" title="Escudo de River" class="img-historia" style="border: none; box-shadow: none;">
+        </div>
+
+        <!-- Sección 5 -->
+        <div class="seccion">
+            <h2>Reproductor Multimedia</h2>
+            <p>Para evitar la restricción de reproducción por políticas de seguridad Cross-Origin, se aplica el enlace de solución técnica provisto en la guía didáctica.</p>
+            
+            <div class="video-contenedor">
+                <iframe src="https://www.youtube.com/embed/F-A_ujDnMo4?si=8yLr8ru74r97z-uL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div> 
+
+</body>
+</html>
